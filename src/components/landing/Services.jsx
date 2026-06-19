@@ -1,4 +1,6 @@
 import { Shield, Star, Pill, ClipboardList } from 'lucide-react';
+import { useState } from 'react';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const services = [
   {
@@ -27,7 +29,65 @@ const services = [
   },
 ];
 
+function ServiceCard({ service, delay }) {
+  const { ref, visible } = useScrollReveal();
+  const [hovered, setHovered] = useState(false);
+  const Icon = service.icon;
+
+  return (
+    <div
+      ref={ref}
+      className="rounded p-8 flex flex-col gap-5"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        backgroundColor: '#ffffff',
+        border: '1px solid #BAE6FD',
+        borderRadius: '4px',
+        boxShadow: hovered
+          ? '0 8px 28px rgba(8,145,178,0.15)'
+          : '0 1px 4px rgba(8,145,178,0.06)',
+        transform: visible
+          ? hovered ? 'translateY(-4px)' : 'translateY(0)'
+          : 'translateY(28px)',
+        opacity: visible ? 1 : 0,
+        transition: `opacity 0.55s ease ${delay}ms, transform 0.45s ease ${delay}ms, box-shadow 0.3s ease`,
+      }}
+    >
+      <div
+        className="w-12 h-12 flex items-center justify-center rounded"
+        style={{
+          backgroundColor: hovered ? '#0891B2' : '#E0F2FE',
+          transition: 'background-color 0.3s ease',
+        }}
+        aria-hidden="true"
+      >
+        <Icon size={22} style={{ color: hovered ? '#ffffff' : '#0891B2', transition: 'color 0.3s ease' }} strokeWidth={1.5} />
+      </div>
+
+      <div
+        className="h-px w-8"
+        style={{ backgroundColor: '#0891B2' }}
+        aria-hidden="true"
+      />
+
+      <h3
+        className="font-heading font-bold text-lg leading-snug"
+        style={{ color: '#0C3547' }}
+      >
+        {service.title}
+      </h3>
+
+      <p className="text-base leading-relaxed" style={{ color: '#475569', lineHeight: '1.65' }}>
+        {service.description}
+      </p>
+    </div>
+  );
+}
+
 export default function Services() {
+  const { ref: headerRef, visible: headerVisible } = useScrollReveal();
+
   return (
     <section
       className="w-full"
@@ -36,7 +96,15 @@ export default function Services() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Section header */}
-        <div className="mb-14">
+        <div
+          ref={headerRef}
+          className="mb-14"
+          style={{
+            opacity: headerVisible ? 1 : 0,
+            transform: headerVisible ? 'translateY(0)' : 'translateY(24px)',
+            transition: 'opacity 0.6s ease, transform 0.6s ease',
+          }}
+        >
           <p
             className="text-sm font-semibold uppercase tracking-widest mb-3"
             style={{ color: '#0891B2' }}
@@ -64,45 +132,9 @@ export default function Services() {
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={service.title}
-                className="rounded p-8 flex flex-col gap-5 transition-shadow duration-200 hover:shadow-md"
-                style={{
-                  backgroundColor: '#ffffff',
-                  border: '1px solid #BAE6FD',
-                  borderRadius: '4px',
-                }}
-              >
-                <div
-                  className="w-12 h-12 flex items-center justify-center rounded"
-                  style={{ backgroundColor: '#E0F2FE' }}
-                  aria-hidden="true"
-                >
-                  <Icon size={22} style={{ color: '#0891B2' }} strokeWidth={1.5} />
-                </div>
-
-                <div
-                  className="h-px w-8"
-                  style={{ backgroundColor: '#0891B2' }}
-                  aria-hidden="true"
-                />
-
-                <h3
-                  className="font-heading font-bold text-lg leading-snug"
-                  style={{ color: '#0C3547' }}
-                >
-                  {service.title}
-                </h3>
-
-                <p className="text-base leading-relaxed" style={{ color: '#475569', lineHeight: '1.65' }}>
-                  {service.description}
-                </p>
-              </div>
-            );
-          })}
+          {services.map((service, i) => (
+            <ServiceCard key={service.title} service={service} delay={i * 100} />
+          ))}
         </div>
       </div>
     </section>

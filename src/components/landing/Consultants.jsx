@@ -1,5 +1,6 @@
 import { Phone, Mail, User } from 'lucide-react';
 import { useState } from 'react';
+import useScrollReveal from '@/hooks/useScrollReveal';
 
 const consultants = [
   {
@@ -24,17 +25,23 @@ const consultants = [
   },
 ];
 
-function ConsultantCard({ consultant }) {
+function ConsultantCard({ consultant, delay = 0 }) {
   const [hovered, setHovered] = useState(false);
+  const { ref, visible } = useScrollReveal();
 
   return (
     <div
-      className="rounded flex flex-col overflow-hidden transition-shadow duration-300"
+      ref={ref}
+      className="rounded flex flex-col overflow-hidden"
       style={{
         border: '1px solid #BAE6FD',
         borderRadius: '4px',
-        boxShadow: hovered ? '0 8px 32px rgba(8,145,178,0.15)' : '0 2px 8px rgba(8,145,178,0.06)',
-        transition: 'box-shadow 0.3s ease',
+        boxShadow: hovered ? '0 16px 48px rgba(8,145,178,0.22)' : '0 2px 8px rgba(8,145,178,0.06)',
+        transform: visible
+          ? hovered ? 'translateY(-6px) scale(1.01)' : 'translateY(0) scale(1)'
+          : 'translateY(32px)',
+        opacity: visible ? 1 : 0,
+        transition: `opacity 0.6s ease ${delay}ms, transform 0.5s ease ${delay}ms, box-shadow 0.3s ease`,
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -146,6 +153,8 @@ function ConsultantCard({ consultant }) {
 }
 
 export default function Consultants() {
+  const { ref: headerRef, visible: headerVisible } = useScrollReveal();
+
   return (
     <section
       className="w-full"
@@ -157,7 +166,15 @@ export default function Consultants() {
       aria-labelledby="consultants-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="mb-14">
+        <div
+          ref={headerRef}
+          className="mb-14"
+          style={{
+            opacity: headerVisible ? 1 : 0,
+            transform: headerVisible ? 'translateY(0)' : 'translateY(24px)',
+            transition: 'opacity 0.6s ease, transform 0.6s ease',
+          }}
+        >
           <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: '#0891B2' }}>
             Meet Your Consultants
           </p>
@@ -181,8 +198,8 @@ export default function Consultants() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-          {consultants.map((c) => (
-            <ConsultantCard key={c.name} consultant={c} />
+          {consultants.map((c, i) => (
+            <ConsultantCard key={c.name} consultant={c} delay={i * 150} />
           ))}
         </div>
       </div>
