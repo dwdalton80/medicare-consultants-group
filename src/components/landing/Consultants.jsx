@@ -20,7 +20,8 @@ const consultants = [
     phoneHref: 'tel:4052022902',
     email: 'Jenniter@Swisher-MCG.com',
     emailHref: 'mailto:Jenniter@Swisher-MCG.com',
-    bio: 'Jennifer specializes in helping clients navigate the often-confusing world of Medicare plan options. Her patient, personalized approach ensures every client understands their choices and feels confident in their decision.',
+    bio: 'Jennifer Swisher brings over 25 years of experience in healthcare sales and business development, with a strong focus on respiratory and durable medical equipment. She currently serves as a Business Development Specialist for Rhythm Healthcare, covering Oklahoma and Texas.',
+    bioFull: 'Jennifer Swisher brings over 25 years of experience in healthcare sales and business development, with a strong focus on respiratory and durable medical equipment. She currently serves as a Business Development Specialist for Rhythm Healthcare, covering Oklahoma and Texas.\n\nJennifer began her medical sales career with Invacare Corporation, where she spent nearly 13 years as a Territory Business Manager. She later held key sales positions with Inogen, O2 Concepts, and Inogen, managing multi-state territories including Texas, Oklahoma, Arkansas, Louisiana, Kansas, Missouri, and Colorado. Her expertise spans strategic partnerships, territory growth, and customer education.\n\nFrom 2020 to 2022, she also applied her sales acumen in real estate as a licensed Realtor with Keller Williams Realty Elite in Oklahoma City.\n\nJennifer is known for building lasting relationships and driving results, always with a focus on improving access to quality home medical care.',
     headerColor: '#0C3547',
     photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/7eca7f813_IMG_4344.jpeg',
   },
@@ -28,6 +29,7 @@ const consultants = [
 
 function ConsultantCard({ consultant, delay = 0 }) {
   const [hovered, setHovered] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const { ref, visible } = useScrollReveal();
 
   return (
@@ -95,9 +97,22 @@ function ConsultantCard({ consultant, delay = 0 }) {
           </p>
         </div>
 
-        <p className="text-base leading-relaxed" style={{ color: '#475569', lineHeight: '1.7' }}>
-          {consultant.bio}
-        </p>
+        <div>
+          <p className="text-base leading-relaxed whitespace-pre-line" style={{ color: '#475569', lineHeight: '1.7' }}>
+            {consultant.bioFull
+              ? expanded ? consultant.bioFull : consultant.bio
+              : consultant.bio}
+          </p>
+          {consultant.bioFull && (
+            <button
+              onClick={() => setExpanded((e) => !e)}
+              className="mt-2 text-sm font-semibold underline underline-offset-2 focus-visible:outline-none"
+              style={{ color: '#0891B2' }}
+            >
+              {expanded ? 'Read less' : 'Read more'}
+            </button>
+          )}
+        </div>
 
         <div className="flex flex-col gap-3 mt-auto pt-5" style={{ borderTop: '1px solid #E0F2FE' }}>
           <a
