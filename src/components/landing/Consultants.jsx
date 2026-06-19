@@ -53,34 +53,30 @@ function ConsultantCard({ consultant, delay = 0 }) {
         style={{
           backgroundColor: consultant.headerColor,
           minHeight: '200px',
-          padding: consultant.photo ? '0' : '3rem 2rem 2rem',
+          padding: '3rem 2rem 2rem',
         }}
       >
-        {consultant.photo ? (
-          <img
-            src={consultant.photo}
-            alt={`Portrait of ${consultant.name}`}
-            className="w-full object-cover object-top"
-            style={{ minHeight: '200px', maxHeight: '260px' }}
-          />
-        ) : (
-          <>
-            <div
-              className="absolute inset-0 opacity-20"
-              style={{
-                backgroundImage: 'radial-gradient(circle at 30% 60%, #0891B2 0%, transparent 60%), radial-gradient(circle at 80% 20%, #0D9488 0%, transparent 50%)',
-              }}
-              aria-hidden="true"
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage: 'radial-gradient(circle at 30% 60%, #0891B2 0%, transparent 60%), radial-gradient(circle at 80% 20%, #0D9488 0%, transparent 50%)',
+          }}
+          aria-hidden="true"
+        />
+        <div
+          className="relative w-24 h-24 rounded-full flex items-center justify-center overflow-hidden"
+          style={{ backgroundColor: 'rgba(8,145,178,0.25)', border: '2px solid #0891B2' }}
+        >
+          {consultant.photo ? (
+            <img
+              src={consultant.photo}
+              alt={`Portrait of ${consultant.name}`}
+              className="w-full h-full object-cover object-top"
             />
-            <div
-              className="relative w-24 h-24 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: 'rgba(8,145,178,0.25)', border: '2px solid #0891B2' }}
-              aria-hidden="true"
-            >
-              <User size={40} style={{ color: '#22D3EE' }} strokeWidth={1} />
-            </div>
-          </>
-        )}
+          ) : (
+            <User size={40} style={{ color: '#22D3EE' }} strokeWidth={1} />
+          )}
+        </div>
         <div
           className="absolute bottom-0 left-0 right-0 h-0.5"
           style={{ backgroundColor: '#0891B2' }}
