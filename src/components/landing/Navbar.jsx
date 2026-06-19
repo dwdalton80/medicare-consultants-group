@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <nav
       className="sticky top-0 z-20 w-full border-b"
-      style={{ backgroundColor: '#0C3547', borderColor: '#0E4D6B' }}
+      style={{ backgroundColor: '#ffffff', borderColor: '#E0F2FE', boxShadow: '0 1px 8px rgba(0,0,0,0.08)' }}
       role="navigation"
       aria-label="Main navigation"
     >
@@ -31,7 +31,7 @@ export default function Navbar() {
             src="https://media.base44.com/images/public/6a35941791f303e104783ca3/38e1fe9ca_IMG_4341.png"
             alt="Medicare Consultants Group logo"
             className="h-14 w-auto object-contain"
-            style={{ filter: 'brightness(0) invert(1)' }}
+            style={{  }}
           />
         </div>
 
@@ -43,8 +43,8 @@ export default function Navbar() {
             rel="noopener noreferrer"
             aria-label="Visit Medicare Consultants Group on Facebook"
             className="flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-200"
-            style={{ color: '#ffffff' }}
-            onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)'}
+            style={{ color: '#0C3547' }}
+            onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(8,145,178,0.08)'}
             onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
           >
             <Facebook size={22} aria-hidden="true" />
