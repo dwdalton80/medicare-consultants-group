@@ -45,12 +45,14 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* MCG Brand Colors */
-    --mcg-navy: #0F172A;
-    --mcg-navy-mid: #1E293B;
-    --mcg-gold: #B45309;
-    --mcg-gold-light: #D97706;
-    --mcg-parchment: #F8FAFC;
-    --mcg-navy-tint: #E2E8F0;
+    --mcg-navy: #0C3547;
+    --mcg-navy-mid: #0E4D6B;
+    --mcg-teal: #0891B2;
+    --mcg-teal-light: #22D3EE;
+    --mcg-teal-green: #0D9488;
+    --mcg-blue: #2563EB;
+    --mcg-parchment: #F0F9FF;
+    --mcg-navy-tint: #E0F2FE;
   }
 
   .dark {

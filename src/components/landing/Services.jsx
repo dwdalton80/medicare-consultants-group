@@ -31,7 +31,7 @@ export default function Services() {
   return (
     <section
       className="w-full"
-      style={{ backgroundColor: '#F8FAFC', paddingTop: 'clamp(5rem, 10vh, 7rem)', paddingBottom: 'clamp(5rem, 10vh, 7rem)' }}
+      style={{ backgroundColor: '#F0F9FF', paddingTop: 'clamp(5rem, 10vh, 7rem)', paddingBottom: 'clamp(5rem, 10vh, 7rem)' }}
       aria-labelledby="services-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -39,7 +39,7 @@ export default function Services() {
         <div className="mb-14">
           <p
             className="text-sm font-semibold uppercase tracking-widest mb-3"
-            style={{ color: '#B45309' }}
+            style={{ color: '#0891B2' }}
           >
             What We Offer
           </p>
@@ -47,17 +47,17 @@ export default function Services() {
             <h2
               id="services-heading"
               className="font-heading font-extrabold"
-              style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: '#0F172A', letterSpacing: '-0.02em', textWrap: 'balance' }}
+              style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: '#0C3547', letterSpacing: '-0.02em', textWrap: 'balance' }}
             >
               Coverage Options, Clearly Explained
             </h2>
             <div
               className="hidden lg:block h-px flex-1 mb-3"
-              style={{ backgroundColor: '#B45309', opacity: 0.4 }}
+              style={{ backgroundColor: '#0891B2', opacity: 0.4 }}
               aria-hidden="true"
             />
           </div>
-          <p className="mt-4 max-w-2xl text-lg" style={{ color: '#475569', lineHeight: '1.7' }}>
+          <p className="mt-4 max-w-2xl text-lg" style={{ color: '#334155', lineHeight: '1.7' }}>
             Every Medicare situation is different. We offer guidance across the full range of Medicare options so you can choose with confidence.
           </p>
         </div>
@@ -72,29 +72,27 @@ export default function Services() {
                 className="rounded p-8 flex flex-col gap-5 transition-shadow duration-200 hover:shadow-md"
                 style={{
                   backgroundColor: '#ffffff',
-                  border: '1px solid #E2E8F0',
+                  border: '1px solid #BAE6FD',
                   borderRadius: '4px',
                 }}
               >
-                {/* Icon */}
                 <div
                   className="w-12 h-12 flex items-center justify-center rounded"
-                  style={{ backgroundColor: '#FEF3C7' }}
+                  style={{ backgroundColor: '#E0F2FE' }}
                   aria-hidden="true"
                 >
-                  <Icon size={22} style={{ color: '#B45309' }} strokeWidth={1.5} />
+                  <Icon size={22} style={{ color: '#0891B2' }} strokeWidth={1.5} />
                 </div>
 
-                {/* Gold guide line top */}
                 <div
                   className="h-px w-8"
-                  style={{ backgroundColor: '#B45309' }}
+                  style={{ backgroundColor: '#0891B2' }}
                   aria-hidden="true"
                 />
 
                 <h3
                   className="font-heading font-bold text-lg leading-snug"
-                  style={{ color: '#0F172A' }}
+                  style={{ color: '#0C3547' }}
                 >
                   {service.title}
                 </h3>

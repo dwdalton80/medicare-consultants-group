@@ -1,4 +1,4 @@
-import { Phone, Mail } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -19,15 +19,15 @@ export default function Hero() {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(105deg, #0F172A 55%, rgba(15,23,42,0.65) 80%, rgba(15,23,42,0.2) 100%)',
+            background: 'linear-gradient(105deg, #0C3547 55%, rgba(12,53,71,0.72) 80%, rgba(12,53,71,0.2) 100%)',
           }}
         />
       </div>
 
-      {/* Gold guide line accent */}
+      {/* Teal guide line accent */}
       <div
         className="absolute left-0 top-0 bottom-0 w-1 hidden lg:block"
-        style={{ backgroundColor: '#B45309' }}
+        style={{ backgroundColor: '#0891B2' }}
         aria-hidden="true"
       />
 
@@ -37,7 +37,7 @@ export default function Hero() {
           {/* Eyebrow */}
           <p
             className="text-sm font-semibold uppercase tracking-widest mb-6"
-            style={{ color: '#D97706' }}
+            style={{ color: '#22D3EE' }}
           >
             Trusted Medicare Guidance
           </p>
@@ -47,20 +47,20 @@ export default function Hero() {
             className="font-heading font-extrabold leading-tight mb-6"
             style={{
               fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-              color: '#F8FAFC',
+              color: '#F0F9FF',
               letterSpacing: '-0.02em',
               textWrap: 'balance',
             }}
           >
             Medicare Guidance,{' '}
-            <span style={{ color: '#D97706' }}>Personalized</span>{' '}
+            <span style={{ color: '#22D3EE' }}>Personalized</span>{' '}
             for You.
           </h1>
 
           {/* Subheadline */}
           <p
             className="mb-10 text-lg leading-relaxed max-w-xl"
-            style={{ color: '#CBD5E1', lineHeight: '1.7' }}
+            style={{ color: '#BAE6FD', lineHeight: '1.7' }}
           >
             Navigating Medicare doesn't have to be overwhelming. Our licensed, independent agents work for you — not the insurance companies — to find the plan that fits your life.
           </p>
@@ -70,14 +70,14 @@ export default function Hero() {
             <a
               href="tel:5126562483"
               aria-label="Call Lori Hunter at 512-656-2483"
-              className="flex items-center justify-center gap-3 px-8 rounded font-semibold text-base transition-colors duration-200 focus-gold"
+              className="flex items-center justify-center gap-3 px-8 rounded font-semibold text-base transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               style={{
-                backgroundColor: '#B45309',
+                backgroundColor: '#0891B2',
                 color: '#ffffff',
                 minHeight: '56px',
               }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#D97706'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#B45309'}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0E7490'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0891B2'}
             >
               <Phone size={18} aria-hidden="true" />
               Call Lori
@@ -87,20 +87,20 @@ export default function Hero() {
             <a
               href="tel:4052022902"
               aria-label="Call Jennifer Swisher at 405-202-2902"
-              className="flex items-center justify-center gap-3 px-8 rounded font-semibold text-base transition-colors duration-200 focus-gold border-2"
+              className="flex items-center justify-center gap-3 px-8 rounded font-semibold text-base transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 border-2"
               style={{
-                borderColor: '#F8FAFC',
-                color: '#F8FAFC',
+                borderColor: '#22D3EE',
+                color: '#F0F9FF',
                 backgroundColor: 'transparent',
                 minHeight: '56px',
               }}
               onMouseOver={(e) => {
-                e.currentTarget.style.backgroundColor = '#F8FAFC';
-                e.currentTarget.style.color = '#0F172A';
+                e.currentTarget.style.backgroundColor = '#22D3EE';
+                e.currentTarget.style.color = '#0C3547';
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.backgroundColor = 'transparent';
-                e.currentTarget.style.color = '#F8FAFC';
+                e.currentTarget.style.color = '#F0F9FF';
               }}
             >
               <Phone size={18} aria-hidden="true" />
@@ -113,10 +113,10 @@ export default function Hero() {
           <div className="mt-10 flex items-center gap-3">
             <div
               className="h-px flex-1 max-w-12"
-              style={{ backgroundColor: '#B45309' }}
+              style={{ backgroundColor: '#0891B2' }}
               aria-hidden="true"
             />
-            <p className="text-sm" style={{ color: '#94A3B8' }}>
+            <p className="text-sm" style={{ color: '#7DD3FC' }}>
               Independent agents · No sales pressure · Free consultations
             </p>
           </div>
