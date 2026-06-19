@@ -64,7 +64,7 @@ function ConsultantCard({ consultant, delay = 0 }) {
           aria-hidden="true"
         />
         <div
-          className="relative w-24 h-24 rounded-full flex items-center justify-center overflow-hidden"
+          className="relative w-40 h-40 rounded-full flex items-center justify-center overflow-hidden"
           style={{ backgroundColor: 'rgba(8,145,178,0.25)', border: '2px solid #0891B2' }}
         >
           {consultant.photo ? (
