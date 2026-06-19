@@ -99,7 +99,7 @@
   body {
     @apply bg-background text-foreground font-body;
     background-color: #F8FAFC;
-    color: #0F172A;
+    color: #0C3547;
   }
 
   h1, h2, h3, h4, h5, h6 {
