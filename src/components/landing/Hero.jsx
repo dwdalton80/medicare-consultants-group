@@ -66,57 +66,29 @@ export default function Hero() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col gap-3">
-            {/* Lori row */}
-            <div className="flex flex-row gap-3">
-              <a
-                href="tel:5126562483"
-                aria-label="Call Lori Hunter"
-                className="flex items-center justify-center gap-2 px-6 rounded font-semibold text-base transition-colors duration-200"
-                style={{ backgroundColor: '#0891B2', color: '#ffffff', minHeight: '52px' }}
-                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0E7490'}
-                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0891B2'}
-              >
-                <Phone size={17} aria-hidden="true" />
-                Call Lori
-              </a>
-              <a
-                href="mailto:Lori@Hunter-MCG.com"
-                aria-label="Email Lori Hunter"
-                className="flex items-center justify-center gap-2 px-6 rounded font-semibold text-base transition-colors duration-200 border-2"
-                style={{ borderColor: '#0891B2', color: '#F0F9FF', backgroundColor: 'transparent', minHeight: '52px' }}
-                onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#0891B2'; }}
-                onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
-              >
-                <Mail size={17} aria-hidden="true" />
-                Email Lori
-              </a>
-            </div>
-            {/* Jennifer row */}
-            <div className="flex flex-row gap-3">
-              <a
-                href="tel:4052022902"
-                aria-label="Call Jennifer Swisher"
-                className="flex items-center justify-center gap-2 px-6 rounded font-semibold text-base transition-colors duration-200"
-                style={{ backgroundColor: '#0891B2', color: '#ffffff', minHeight: '52px' }}
-                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0E7490'}
-                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0891B2'}
-              >
-                <Phone size={17} aria-hidden="true" />
-                Call Jennifer
-              </a>
-              <a
-                href="mailto:Jenniter@Swisher-MCG.com"
-                aria-label="Email Jennifer Swisher"
-                className="flex items-center justify-center gap-2 px-6 rounded font-semibold text-base transition-colors duration-200 border-2"
-                style={{ borderColor: '#0891B2', color: '#F0F9FF', backgroundColor: 'transparent', minHeight: '52px' }}
-                onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#0891B2'; }}
-                onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
-              >
-                <Mail size={17} aria-hidden="true" />
-                Email Jennifer
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="mailto:Lori@Hunter-MCG.com"
+              aria-label="Email Lori Hunter"
+              className="flex items-center justify-center gap-2 px-8 rounded font-semibold text-base transition-colors duration-200"
+              style={{ backgroundColor: '#0891B2', color: '#ffffff', minHeight: '52px' }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0E7490'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0891B2'}
+            >
+              <Mail size={17} aria-hidden="true" />
+              Email Lori
+            </a>
+            <a
+              href="mailto:Jenniter@Swisher-MCG.com"
+              aria-label="Email Jennifer Swisher"
+              className="flex items-center justify-center gap-2 px-8 rounded font-semibold text-base transition-colors duration-200 border-2"
+              style={{ borderColor: '#0891B2', color: '#F0F9FF', backgroundColor: 'transparent', minHeight: '52px' }}
+              onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#0891B2'; }}
+              onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
+            >
+              <Mail size={17} aria-hidden="true" />
+              Email Jennifer
+            </a>
           </div>
 
           {/* Trust badge */}
