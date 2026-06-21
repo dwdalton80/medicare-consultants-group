@@ -30,7 +30,7 @@ export default function Navbar() {
           <img
             src="https://media.base44.com/images/public/6a35941791f303e104783ca3/38e1fe9ca_IMG_4341.png"
             alt="Medicare Consultants Group logo"
-            className="h-14 w-auto object-contain"
+            className="h-20 w-auto object-contain"
             style={{  }}
           />
         </div>
