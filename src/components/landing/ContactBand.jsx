@@ -50,7 +50,7 @@ export default function ContactBand() {
                 style={{ color: '#7DD3FC' }}
               >
                 <Mail size={14} aria-hidden="true" />
-                Lori@Hunter-MCG.com
+                <span className="break-all">Lori@Hunter-MCG.com</span>
               </a>
             </div>
 
@@ -76,7 +76,7 @@ export default function ContactBand() {
                 style={{ color: '#7DD3FC' }}
               >
                 <Mail size={14} aria-hidden="true" />
-                Jenniter@Swisher-MCG.com
+                <span className="break-all">Jenniter@Swisher-MCG.com</span>
               </a>
             </div>
 
@@ -102,7 +102,7 @@ export default function ContactBand() {
                 style={{ color: '#7DD3FC' }}
               >
                 <Mail size={14} aria-hidden="true" />
-                Scott@Swosjer-MCG.com
+                <span className="break-all">Scott@Swosjer-MCG.com</span>
               </a>
             </div>
           </div>
