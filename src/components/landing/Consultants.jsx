@@ -97,22 +97,22 @@ function ConsultantCard({ consultant, delay = 0 }) {
           </p>
         </div>
 
-        <div className="hidden">
-          <p className="text-base leading-relaxed whitespace-pre-line hidden" style={{ color: '#475569', lineHeight: '1.7' }}>
-            {consultant.bioFull ?
-            expanded ? consultant.bioFull : consultant.bio :
-            consultant.bio}
-          </p>
-          {consultant.bioFull &&
-          <button
-            onClick={() => setExpanded((e) => !e)}
-            className="mt-2 text-sm font-semibold underline underline-offset-2 focus-visible:outline-none"
-            style={{ color: '#0891B2' }}>
-            
-              {expanded ? 'Read less' : 'Read more'}
-            </button>
-          }
-        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         <div className="flex flex-col gap-3 mt-auto pt-5" style={{ borderTop: '1px solid #E0F2FE' }}>
           <a
