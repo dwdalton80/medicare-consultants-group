@@ -24,6 +24,16 @@ const consultants = [
   bioFull: 'Jennifer Swisher brings over 25 years of experience in healthcare sales and business development, with a strong focus on respiratory and durable medical equipment. She currently serves as a Business Development Specialist for Rhythm Healthcare, covering Oklahoma and Texas.\n\nJennifer began her medical sales career with Invacare Corporation, where she spent nearly 13 years as a Territory Business Manager. She later held key sales positions with Inogen, O2 Concepts, and Inogen, managing multi-state territories including Texas, Oklahoma, Arkansas, Louisiana, Kansas, Missouri, and Colorado. Her expertise spans strategic partnerships, territory growth, and customer education.\n\nFrom 2020 to 2022, she also applied her sales acumen in real estate as a licensed Realtor with Keller Williams Realty Elite in Oklahoma City.\n\nJennifer is known for building lasting relationships and driving results, always with a focus on improving access to quality home medical care.',
   headerColor: '#0C3547',
   photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/7eca7f813_IMG_4344.jpeg'
+},
+{
+  name: 'Scott Swisher',
+  title: 'Licensed Independent Insurance Agent',
+  phone: '(405) 418-8586',
+  phoneHref: 'tel:4054188586',
+  email: 'Scott@Swosjer-MCG.com',
+  emailHref: 'mailto:Scott@Swosjer-MCG.com',
+  bio: 'Scott brings decades of insurance industry experience to Medicare Consultants Group, helping clients navigate their Medicare coverage options with confidence and clarity.',
+  headerColor: '#0E4D6B'
 }];
 
 
@@ -223,7 +233,7 @@ export default function Consultants() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
           {consultants.map((c, i) =>
           <ConsultantCard key={c.name} consultant={c} delay={i * 150} />
           )}
