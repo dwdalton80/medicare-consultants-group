@@ -22,6 +22,7 @@ const consultants = [
     emailHref: 'mailto:Jenniter@Swisher-MCG.com',
     bio: 'Jennifer specializes in helping clients navigate the often-confusing world of Medicare plan options. Her patient, personalized approach ensures every client understands their choices and feels confident in their decision.',
     headerColor: '#0C3547',
+    photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/7eca7f813_IMG_4344.jpeg',
   },
 ];
 
