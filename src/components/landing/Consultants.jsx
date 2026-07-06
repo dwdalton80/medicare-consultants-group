@@ -110,18 +110,18 @@ function ConsultantCard({ consultant, delay = 0 }) {
           </p>
         </div>
 
-        <p className="text-base leading-relaxed" style={{ color: '#475569', lineHeight: '1.7' }}>
+        <p className="text-base leading-relaxed hidden" style={{ color: '#475569', lineHeight: '1.7' }}>
           {expanded && consultant.bioFull ? consultant.bioFull : consultant.bio}
         </p>
 
-        {consultant.bioFull && (
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="self-start text-sm font-semibold focus-visible:outline focus-visible:outline-2 rounded"
-            style={{ color: '#0891B2' }}>
+        {consultant.bioFull &&
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="self-start text-sm font-semibold focus-visible:outline focus-visible:outline-2 rounded hidden"
+          style={{ color: '#0891B2' }}>
             {expanded ? 'Read less' : 'Read more'}
           </button>
-        )}
+        }
 
         <div className="flex flex-col gap-3 mt-auto pt-5" style={{ borderTop: '1px solid #E0F2FE' }}>
           <a
