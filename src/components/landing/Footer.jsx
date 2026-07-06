@@ -48,7 +48,7 @@ export default function Footer() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#0891B2', opacity: 0.9 }}>
               TPMO Disclaimer
             </p>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8', maxWidth: '72ch' }}>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8' }}>
               We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact{' '}
               <a
                 href="https://www.medicare.gov"
@@ -77,10 +77,10 @@ export default function Footer() {
             <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#0891B2', opacity: 0.9 }}>
               Affiliation Notice
             </p>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8', maxWidth: '72ch' }}>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8' }}>
               Medicare Consultants Group is a group of independent licensed insurance agents.
             </p>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8', maxWidth: '72ch', marginTop: '8px' }}>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8', marginTop: '8px' }}>
               <strong style={{ color: 'rgba(255,255,255,0.8)' }}>Important Notice:</strong> This website is operated by private, independent licensed insurance agents. It is not affiliated with, endorsed by, or connected to the federal Medicare program, CMS, or any government entity.
             </p>
           </div>
