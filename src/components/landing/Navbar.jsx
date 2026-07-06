@@ -25,14 +25,14 @@ export default function Navbar() {
       aria-label="Main navigation"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
-        {/* Logo */}
-        <div className="flex items-center gap-4">
-          <img
-            src="https://media.base44.com/images/public/6a35941791f303e104783ca3/38e1fe9ca_IMG_4341.png"
-            alt="Medicare Consultants Group logo"
-            className="h-20 w-auto object-contain"
-            style={{  }}
-          />
+        {/* Company name */}
+        <div className="flex items-center">
+          <span
+            className="font-heading font-extrabold leading-tight"
+            style={{ color: '#0891B2', fontSize: 'clamp(1.1rem, 2vw, 1.5rem)', letterSpacing: '-0.02em' }}
+          >
+            Medicare Consultants Group
+          </span>
         </div>
 
         {/* Right side: Facebook + CTA dropdown */}

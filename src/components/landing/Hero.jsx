@@ -34,6 +34,14 @@ export default function Hero() {
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 flex flex-col justify-center" style={{ minHeight: '90vh' }}>
         <div className="max-w-2xl py-20 lg:py-0">
+          {/* Logo */}
+          <img
+            src="https://media.base44.com/images/public/6a35941791f303e104783ca3/38e1fe9ca_IMG_4341.png"
+            alt="Medicare Consultants Group logo"
+            className="w-auto object-contain mb-8"
+            style={{ height: 'clamp(80px, 12vh, 130px)' }}
+          />
+
           {/* Eyebrow */}
           <p
             className="text-sm font-semibold uppercase tracking-widest mb-6"
