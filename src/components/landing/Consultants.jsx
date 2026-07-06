@@ -215,10 +215,10 @@ export default function Consultants() {
               aria-hidden="true" />
             
           </div>
-          <p className="mt-4 max-w-2xl text-lg" style={{ color: '#334155', lineHeight: '1.7' }}>
+          <p className="mt-4 text-lg" style={{ color: '#334155', lineHeight: '1.7' }}>
             Agents and brokers help Medicare recipients understand their coverage options and enroll with confidence. With over 25 years of Medicare experience and 35 years in the insurance industry, combined with access to most major plans, Medicare Consultants Group is a trusted partner that can help you choose the coverage that is right for you.
           </p>
-          <p className="mt-4 max-w-2xl text-lg" style={{ color: '#334155', lineHeight: '1.7' }}>
+          <p className="mt-4 text-lg" style={{ color: '#334155', lineHeight: '1.7' }}>
             Medicare Consultants Group is licensed to work in multiple states. We are committed to making the process as easy as possible for our partners and clients. For hassle-free assistance, simply contact us and Medicare Consultants Group will be happy to help.
           </p>
         </div>
