@@ -62,7 +62,7 @@ export default function Hero() {
             className="mb-10 text-lg leading-relaxed max-w-xl"
             style={{ color: '#BAE6FD', lineHeight: '1.7' }}
           >
-            Navigating Medicare doesn't have to be overwhelming. Our licensed, independent agents work for you — not the insurance companies — to find the plan that fits your life.
+            THERE ARE A LOT OF DECISIONS TO MAKE REGARDING YOUR MEDICARE COVERAGE. YOU DO NOT NEED TO GO IT ALONE!
           </p>
 
           {/* CTA Buttons */}
