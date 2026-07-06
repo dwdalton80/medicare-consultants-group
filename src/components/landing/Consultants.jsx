@@ -110,9 +110,9 @@ function ConsultantCard({ consultant, delay = 0 }) {
           </p>
         </div>
 
-        <p className="text-base leading-relaxed hidden" style={{ color: '#475569', lineHeight: '1.7' }}>
-          {expanded && consultant.bioFull ? consultant.bioFull : consultant.bio}
-        </p>
+        
+
+        
 
         {consultant.bioFull &&
         <button
