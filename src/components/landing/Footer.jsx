@@ -43,8 +43,20 @@ export default function Footer() {
         <div className="h-px mb-8" style={{ backgroundColor: '#0891B2', opacity: 0.3 }} aria-hidden="true" />
 
         {/* Disclaimers */}
-        <div className="flex flex-col lg:flex-row gap-7">
-          <div className="flex-1">
+        <div className="flex flex-col gap-7">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#0891B2', opacity: 0.9 }}>
+              Affiliation Notice
+            </p>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8' }}>
+              Medicare Consultants Group is a group of independent licensed insurance agents.
+            </p>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8', marginTop: '8px' }}>
+              <strong style={{ color: 'rgba(255,255,255,0.8)' }}>Important Notice:</strong> This website is operated by private, independent licensed insurance agents. It is not affiliated with, endorsed by, or connected to the federal Medicare program, CMS, or any government entity.
+            </p>
+          </div>
+
+          <div>
             <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#0891B2', opacity: 0.9 }}>
               TPMO Disclaimer
             </p>
@@ -70,18 +82,6 @@ export default function Footer() {
                 1-800-MEDICARE
               </a>{' '}
               to get information on all of your options.
-            </p>
-          </div>
-
-          <div className="flex-1 lg:max-w-md">
-            <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#0891B2', opacity: 0.9 }}>
-              Affiliation Notice
-            </p>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8' }}>
-              Medicare Consultants Group is a group of independent licensed insurance agents.
-            </p>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8', marginTop: '8px' }}>
-              <strong style={{ color: 'rgba(255,255,255,0.8)' }}>Important Notice:</strong> This website is operated by private, independent licensed insurance agents. It is not affiliated with, endorsed by, or connected to the federal Medicare program, CMS, or any government entity.
             </p>
           </div>
         </div>
