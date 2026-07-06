@@ -34,9 +34,7 @@ const consultants = [
   emailHref: 'mailto:Scott@Swosjer-MCG.com',
   bio: 'Scott brings decades of insurance industry experience to Medicare Consultants Group, helping clients navigate their Medicare coverage options with confidence and clarity.',
   headerColor: '#0E4D6B',
-  photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/6754a7ce6_IMG_4551.jpeg',
-  photoPosition: 'center',
-  photoZoom: 0.8
+  photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/6754a7ce6_IMG_4551.jpeg'
 }];
 
 
