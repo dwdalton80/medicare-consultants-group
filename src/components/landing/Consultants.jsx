@@ -23,8 +23,7 @@ const consultants = [
   emailHref: 'mailto:Jenniter@Swisher-MCG.com',
   bio: 'Jennifer Swisher brings over 25 years of experience in healthcare sales and business development, with a strong focus on respiratory and durable medical equipment. She currently serves as a Business Development Specialist for Rhythm Healthcare, covering Oklahoma and Texas.',
   bioFull: 'Jennifer Swisher brings over 25 years of experience in healthcare sales and business development, with a strong focus on respiratory and durable medical equipment. She currently serves as a Business Development Specialist for Rhythm Healthcare, covering Oklahoma and Texas.\n\nJennifer began her medical sales career with Invacare Corporation, where she spent nearly 13 years as a Territory Business Manager. She later held key sales positions with Inogen, O2 Concepts, and Inogen, managing multi-state territories including Texas, Oklahoma, Arkansas, Louisiana, Kansas, Missouri, and Colorado. Her expertise spans strategic partnerships, territory growth, and customer education.\n\nFrom 2020 to 2022, she also applied her sales acumen in real estate as a licensed Realtor with Keller Williams Realty Elite in Oklahoma City.\n\nJennifer is known for building lasting relationships and driving results, always with a focus on improving access to quality home medical care.',
-  headerColor: '#0C3547',
-  photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/97de226b4_IMG_4552.jpg'
+  headerColor: '#0C3547'
 },
 {
   name: 'Scott Swisher',
