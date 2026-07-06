@@ -27,11 +27,11 @@ export default function ContactBand() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 lg:gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
             {/* Lori */}
             <div
-              className="flex flex-col gap-4 p-7 rounded"
-              style={{ backgroundColor: '#0E4D6B', border: '1px solid #0891B2', borderRadius: '4px', minWidth: '220px' }}
+              className="flex flex-col gap-3 p-5 rounded"
+              style={{ backgroundColor: '#0E4D6B', border: '1px solid #0891B2', borderRadius: '4px' }}
             >
               <p className="font-heading font-bold text-lg" style={{ color: '#F0F9FF' }}>Lori Hunter</p>
               <a
@@ -56,8 +56,8 @@ export default function ContactBand() {
 
             {/* Jennifer */}
             <div
-              className="flex flex-col gap-4 p-7 rounded"
-              style={{ backgroundColor: '#0E4D6B', border: '1px solid #0891B2', borderRadius: '4px', minWidth: '220px' }}
+              className="flex flex-col gap-3 p-5 rounded"
+              style={{ backgroundColor: '#0E4D6B', border: '1px solid #0891B2', borderRadius: '4px' }}
             >
               <p className="font-heading font-bold text-lg" style={{ color: '#F0F9FF' }}>Jennifer Swisher</p>
               <a
@@ -77,6 +77,32 @@ export default function ContactBand() {
               >
                 <Mail size={14} aria-hidden="true" />
                 Jenniter@Swisher-MCG.com
+              </a>
+            </div>
+
+            {/* Scott */}
+            <div
+              className="flex flex-col gap-3 p-5 rounded"
+              style={{ backgroundColor: '#0E4D6B', border: '1px solid #0891B2', borderRadius: '4px' }}
+            >
+              <p className="font-heading font-bold text-lg" style={{ color: '#F0F9FF' }}>Scott Swisher</p>
+              <a
+                href="tel:4054188586"
+                aria-label="Call Scott Swisher at 405-418-8586"
+                className="flex items-center gap-2 font-semibold text-base hover:underline underline-offset-2 focus-visible:outline focus-visible:outline-2 rounded"
+                style={{ color: '#22D3EE' }}
+              >
+                <Phone size={16} aria-hidden="true" />
+                (405) 418-8586
+              </a>
+              <a
+                href="mailto:Scott@Swosjer-MCG.com"
+                aria-label="Email Scott Swisher"
+                className="flex items-center gap-2 text-sm hover:underline underline-offset-2 focus-visible:outline focus-visible:outline-2 rounded"
+                style={{ color: '#7DD3FC' }}
+              >
+                <Mail size={14} aria-hidden="true" />
+                Scott@Swosjer-MCG.com
               </a>
             </div>
           </div>
