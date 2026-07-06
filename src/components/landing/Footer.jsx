@@ -78,7 +78,10 @@ export default function Footer() {
               Affiliation Notice
             </p>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8' }}>
-              This website is operated by a private, independent licensed insurance agent. It is not affiliated with, endorsed by, or connected to the federal Medicare program, CMS, or any government entity.
+              Medicare Consultants Group is a group of independent licensed insurance agents.
+            </p>
+            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', lineHeight: '1.8', marginTop: '8px' }}>
+              <strong style={{ color: 'rgba(255,255,255,0.8)' }}>Important Notice:</strong> This website is operated by private, independent licensed insurance agents. It is not affiliated with, endorsed by, or connected to the federal Medicare program, CMS, or any government entity.
             </p>
           </div>
         </div>
