@@ -11,7 +11,8 @@ const consultants = [
   email: 'Lori@Hunter-MCG.com',
   emailHref: 'mailto:Lori@Hunter-MCG.com',
   bio: 'Lori brings years of expertise helping Medicare-eligible individuals find coverage that truly fits their health needs and budget. She is committed to clear, pressure-free guidance through every step of the enrollment process.',
-  headerColor: '#0E4D6B'
+  headerColor: '#0E4D6B',
+  photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/97de226b4_IMG_4552.jpg'
 },
 {
   name: 'Jennifer Swisher',
