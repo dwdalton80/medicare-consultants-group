@@ -39,7 +39,7 @@ export default function Hero() {
             src="https://media.base44.com/images/public/6a35941791f303e104783ca3/38e1fe9ca_IMG_4341.png"
             alt="Medicare Consultants Group logo"
             className="w-auto object-contain mb-8"
-            style={{ height: 'clamp(80px, 12vh, 130px)' }}
+            style={{ height: 'clamp(110px, 16vh, 180px)', filter: 'drop-shadow(0 0 24px rgba(255,255,255,0.6)) drop-shadow(0 0 48px rgba(255,255,255,0.35))' }}
           />
 
           {/* Eyebrow */}
