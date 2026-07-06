@@ -25,14 +25,14 @@ export default function Navbar() {
       aria-label="Main navigation"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
-        {/* Company name */}
-        <div className="flex items-center">
-          <span
-            className="font-heading font-extrabold leading-tight"
-            style={{ color: '#0891B2', fontSize: 'clamp(1.1rem, 2vw, 1.5rem)', letterSpacing: '-0.02em' }}
-          >
-            Medicare Consultants Group
-          </span>
+        {/* Logo */}
+        <div className="flex items-center gap-4">
+          <img
+            src="https://media.base44.com/images/public/6a35941791f303e104783ca3/38e1fe9ca_IMG_4341.png"
+            alt="Medicare Consultants Group logo"
+            className="h-14 w-auto object-contain"
+            style={{  }}
+          />
         </div>
 
         {/* Right side: Facebook + CTA dropdown */}
@@ -96,7 +96,7 @@ export default function Navbar() {
                 <div className="h-px mx-4" style={{ backgroundColor: 'rgba(8,145,178,0.3)' }} />
 
                 {/* Jennifer */}
-                <div className="px-4 pt-2 pb-2">
+                <div className="px-4 pt-2 pb-4">
                   <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#22D3EE' }}>Jennifer Swisher</p>
                   <a
                     href="tel:4052022902"
@@ -108,24 +108,6 @@ export default function Navbar() {
                   >
                     <Phone size={14} aria-hidden="true" style={{ color: '#22D3EE' }} />
                     (405) 202-2902
-                  </a>
-                </div>
-
-                <div className="h-px mx-4" style={{ backgroundColor: 'rgba(8,145,178,0.3)' }} />
-
-                {/* Scott */}
-                <div className="px-4 pt-2 pb-4">
-                  <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#22D3EE' }}>Scott Swisher</p>
-                  <a
-                    href="tel:4054188586"
-                    onClick={() => setOpen(false)}
-                    className="flex items-center gap-3 py-2 px-3 rounded text-sm font-medium w-full"
-                    style={{ color: '#F0F9FF' }}
-                    onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.08)'}
-                    onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                  >
-                    <Phone size={14} aria-hidden="true" style={{ color: '#22D3EE' }} />
-                    (405) 418-8586
                   </a>
                 </div>
               </div>

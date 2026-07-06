@@ -34,14 +34,6 @@ export default function Hero() {
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 flex flex-col justify-center" style={{ minHeight: '90vh' }}>
         <div className="max-w-2xl py-20 lg:py-0">
-          {/* Logo */}
-          <img
-            src="https://media.base44.com/images/public/6a35941791f303e104783ca3/38e1fe9ca_IMG_4341.png"
-            alt="Medicare Consultants Group logo"
-            className="w-auto object-contain mb-8"
-            style={{ height: 'clamp(110px, 16vh, 180px)', filter: 'drop-shadow(0 0 12px rgba(255,255,255,0.25))' }}
-          />
-
           {/* Eyebrow */}
           <p
             className="text-sm font-semibold uppercase tracking-widest mb-6"
@@ -70,7 +62,7 @@ export default function Hero() {
             className="mb-10 text-lg leading-relaxed max-w-xl"
             style={{ color: '#BAE6FD', lineHeight: '1.7' }}
           >
-            THERE ARE A LOT OF DECISIONS TO MAKE REGARDING YOUR MEDICARE COVERAGE. YOU DO NOT NEED TO GO IT ALONE!
+            Navigating Medicare doesn't have to be overwhelming. Our licensed, independent agents work for you — not the insurance companies — to find the plan that fits your life.
           </p>
 
           {/* CTA Buttons */}
@@ -89,24 +81,13 @@ export default function Hero() {
             <a
               href="mailto:Jenniter@Swisher-MCG.com"
               aria-label="Email Jennifer Swisher"
-              className="flex items-center justify-center gap-2 px-8 rounded font-semibold text-base transition-colors duration-200"
-              style={{ backgroundColor: '#0891B2', color: '#ffffff', minHeight: '52px' }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0E7490'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0891B2'}
+              className="flex items-center justify-center gap-2 px-8 rounded font-semibold text-base transition-colors duration-200 border-2"
+              style={{ borderColor: '#0891B2', color: '#F0F9FF', backgroundColor: 'transparent', minHeight: '52px' }}
+              onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#0891B2'; }}
+              onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
             >
               <Mail size={17} aria-hidden="true" />
               Email Jennifer
-            </a>
-            <a
-              href="mailto:Scott@Swosjer-MCG.com"
-              aria-label="Email Scott Swisher"
-              className="flex items-center justify-center gap-2 px-8 rounded font-semibold text-base transition-colors duration-200"
-              style={{ backgroundColor: '#0891B2', color: '#ffffff', minHeight: '52px' }}
-              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#0E7490'}
-              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0891B2'}
-            >
-              <Mail size={17} aria-hidden="true" />
-              Email Scott
             </a>
           </div>
 
