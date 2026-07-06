@@ -34,7 +34,8 @@ const consultants = [
   emailHref: 'mailto:Scott@Swosjer-MCG.com',
   bio: 'Scott brings decades of insurance industry experience to Medicare Consultants Group, helping clients navigate their Medicare coverage options with confidence and clarity.',
   headerColor: '#0E4D6B',
-  photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/6754a7ce6_IMG_4551.jpeg'
+  photo: 'https://media.base44.com/images/public/6a35941791f303e104783ca3/6754a7ce6_IMG_4551.jpeg',
+  photoPosition: 'center'
 }];
 
 
@@ -84,7 +85,8 @@ function ConsultantCard({ consultant, delay = 0 }) {
           <img
             src={consultant.photo}
             alt={`Portrait of ${consultant.name}`}
-            className="w-full h-full object-cover object-top" /> :
+            className="w-full h-full object-cover"
+            style={{ objectPosition: consultant.photoPosition || 'top' }} /> :
 
 
           <User size={40} style={{ color: '#22D3EE' }} strokeWidth={1} />
