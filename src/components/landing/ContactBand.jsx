@@ -96,13 +96,13 @@ export default function ContactBand() {
                 (405) 418-8586
               </a>
               <a
-                href="mailto:Scott@Swosjer-MCG.com"
+                href="mailto:Scott@Swisher-MCG.com"
                 aria-label="Email Scott Swisher"
                 className="flex items-center gap-2 text-sm hover:underline underline-offset-2 focus-visible:outline focus-visible:outline-2 rounded"
                 style={{ color: '#7DD3FC' }}
               >
                 <Mail size={14} aria-hidden="true" />
-                <span className="break-all">Scott@Swosjer-MCG.com</span>
+                <span className="break-all">Scott@Swisher-MCG.com</span>
               </a>
             </div>
           </div>

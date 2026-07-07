@@ -98,7 +98,7 @@ export default function Hero() {
               Email Jennifer
             </a>
             <a
-              href="mailto:Scott@Swosjer-MCG.com"
+              href="mailto:Scott@Swisher-MCG.com"
               aria-label="Email Scott Swisher"
               className="flex items-center justify-center gap-2 px-8 rounded font-semibold text-base transition-colors duration-200"
               style={{ backgroundColor: '#0891B2', color: '#ffffff', minHeight: '52px' }}
