@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/medicare-consultants-group/',
+  base: '/',
   logLevel: 'error', // Suppress warnings, only show errors
   resolve: {
     alias: {

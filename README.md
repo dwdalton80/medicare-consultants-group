@@ -23,4 +23,4 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site
 
 To enable it on a new repo: **Settings → Pages → Source → GitHub Actions**.
 
-The site is served from `/medicare-consultants-group/` (see `base` in `vite.config.js`) to match the default GitHub Pages project URL, `https://<username>.github.io/medicare-consultants-group/`. Update that value if the repo is renamed or a custom domain is used.
+The site is served at the root path (`base: '/'` in `vite.config.js`) via the custom domain `medicareconsultantsgroup.com` (see `public/CNAME`). If the custom domain is removed and the site falls back to `https://<username>.github.io/<repo>/`, change `base` back to `/<repo>/`.
