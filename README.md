@@ -1,39 +1,26 @@
-**Welcome to your Base44 project** 
+## Medicare Consultants Group
 
-**About**
+Marketing landing page for Medicare Consultants Group, built with React, Vite, Tailwind CSS, and shadcn/ui.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
-
-This project contains everything you need to run your app locally.
-
-**Edit the code in your local development environment**
-
-Any change pushed to the repo will also be reflected in the Base44 Builder.
-
-**Prerequisites:** 
-
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+### Local development
 
 ```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
-
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
+npm install
+npm run dev
 ```
 
-Run the app: `npm run dev`
+### Build
 
-**Publish your changes**
+```
+npm run build
+```
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+Outputs a static site to `./dist`.
 
-**Docs & Support**
+### Deployment
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages.
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+To enable it on a new repo: **Settings → Pages → Source → GitHub Actions**.
+
+The site is served from `/medicare-consultants-group/` (see `base` in `vite.config.js`) to match the default GitHub Pages project URL, `https://<username>.github.io/medicare-consultants-group/`. Update that value if the repo is renamed or a custom domain is used.

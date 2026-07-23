@@ -1,4 +1,4 @@
-import { Phone, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -14,7 +14,7 @@ export default function Hero() {
           alt=""
           aria-hidden="true"
           className="w-full h-full object-cover"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <div
           className="absolute inset-0"
